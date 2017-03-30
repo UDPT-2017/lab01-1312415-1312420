@@ -1,0 +1,19 @@
+{
+  "name": "lab01-1312415-1312420",
+  "version": "1.0.0",
+  "description": "**Name of your app** là một bài tập 1 tại môn UDPT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1312415/lab01-1312415-1312420.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1312415/lab01-1312415-1312420/issues"
+  },
+  "homepage": "https://github.com/1312415/lab01-1312415-1312420#readme"
+}
