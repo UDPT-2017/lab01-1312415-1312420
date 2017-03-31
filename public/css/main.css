@@ -1,6 +1,9 @@
 .block {
-    display: block;
+    display: inline-block;
     float: left;
+    white-space: nowrap;
+    max-width: inherit;
+    overflow: hidden;
 }
 
 .plus {
@@ -10,3 +13,10 @@
     padding: 0;
     overflow:hidden;
 }
+.title{
+    margin: auto auto;
+    width: auto;
+
+}
+
+

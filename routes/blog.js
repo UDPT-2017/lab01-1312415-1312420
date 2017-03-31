@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function (req, res) {
-    res.render('index', {
-        page: 'index'
+router.get('/blog', function(req, res) {
+    res.render('blog',{
+        page: 'blog'
     });
 });
 

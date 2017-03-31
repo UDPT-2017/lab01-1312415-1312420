@@ -18,6 +18,12 @@ app.set('view engine', 'hbs');
 
 var routes = require('./routes/index');
 app.get('/',routes);
+var about = require('./routes/about');
+app.get('/about', about);
+var album = require('./routes/album');
+app.get('/album', album);
+var blog = require('./routes/blog');
+app.get('/blog', blog);
 
 app.set('port', (process.env.PORT || 3000));
 
