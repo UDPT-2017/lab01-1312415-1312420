@@ -1,0 +1,22 @@
+.block {
+    display: inline-block;
+    float: left;
+    white-space: nowrap;
+    max-width: inherit;
+    overflow: hidden;
+}
+
+.plus {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+.title{
+    margin: auto auto;
+    width: auto;
+
+}
+
+
