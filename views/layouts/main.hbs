@@ -15,11 +15,12 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/about.css">
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
     <script src="js/main.js"></script>
     <script>
         $(function () {
             console.log('#nav li' + ' #{{page}}');
-            $('#bs-example-navbar-collapse-1 #{{page}}' ).addClass('active');
+            $('#bs-example-navbar-collapse-1 #{{page}}').addClass('active');
         });
     </script>
 </head>
@@ -42,10 +43,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li id="index"><a href="/" >Home</a></li>
+                    <li id="index"><a href="/">Home</a></li>
                     <li id="about"><a href="/about" id="about">About</a></li>
-                    <li id="album"><a href="/album" >Album</a></li>
-                    <li id="blog"><a href="/blog" >Blog</a></li>
+                    <li id="album"><a href="/album">Album</a></li>
+                    <li id="blog"><a href="/blog">Blog</a></li>
 
                 </ul>
 
@@ -55,12 +56,12 @@
     <nav class="navbar navbar-inverse block">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed plus" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false" >
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                 <span class="glyphicon glyphicon-plus" style="color: aliceblue"></span>
             </button>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul  class="nav nav-pills nav-stacked ">
+            <ul class="nav nav-pills nav-stacked ">
                 <li role="presentation" class="active"><a href="#">Home</a></li>
                 <li role="presentation"><a href="#">Profile</a></li>
                 <li role="presentation"><a href="#">Messages</a></li>
@@ -68,7 +69,9 @@
         </div>
     </nav>
     <div>
-        {{{body}}}
+        <div class="main-body">
+            {{{body}}}
+        </div>
     </div>
 </div>
 </body>
