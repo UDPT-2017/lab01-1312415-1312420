@@ -15,6 +15,10 @@ const UserSchema = mongoose.Schema({
             message: '{VALUE} is not email'
         }
     },
+    avatar: {
+        type: String
+    }
+    ,
     name:{
         type: String,
         required: [true, 'require name'],

@@ -4,8 +4,11 @@ var _ = require('lodash');
 var User = require('../models/User');
 
 router.get('/', function (req, res) {
+    var text = [];
+    text.push(req.query.text);
     res.render('login', {
-        page: 'login'
+        page: 'login',
+        notices: text
     })
 });
 router.post('/', function (req, res) {

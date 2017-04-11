@@ -31,7 +31,7 @@ Yêu cầu **bắt buộc**
 * [x] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**1312415**)
 
 Yêu cầu **không bắt buộc**:
-* [ ] Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản. (**MSSV**)
+* [x] Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản. (**MSSV**)
 * [ ] Có thể xem danh sách các comment của từng bài viết.  (**MSSV**)
 * [ ] Cho phép người dùng đã đăng nhập đăng thêm bài viết mới. (**MSSV**)
 * [ ] Cho phép người dùng đã đăng nhập comment cho bài viết. (**MSSV**)
