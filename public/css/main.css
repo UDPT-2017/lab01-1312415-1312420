@@ -4,7 +4,10 @@
     overflow: hidden;
     padding: 0;
 }
-
+.small-avatar{
+    height: 30px;
+    width: 30px;
+}
 .plus {
     height: 30px;
     width: 30px;
@@ -19,7 +22,7 @@
 }
 @media (min-width: 768px) {
     .main-body{
-        margin-left: 130px;
+        margin-left: 150px;
         padding-right: 0px;
     }
 }
@@ -67,5 +70,7 @@
         overflow: hidden!important;
     }
 }
-
+#form-logout{
+    margin-top: 5px;
+}
 

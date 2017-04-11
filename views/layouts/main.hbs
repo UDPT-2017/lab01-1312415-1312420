@@ -49,10 +49,27 @@
                     <li id="blog"><a href="/blog">Blog</a></li>
 
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="login" ><a href="/login">Login</a></li>
-                    <li id="register" ><a href="/user">register</a></li>
-                </ul>
+                {{#if session.name }}
+                    <ul class="nav navbar-nav navbar-right">
+                        <form id="form-logout" action="/logout" method="post">
+                            <img src="{{session.avatar}}" class="small-avatar">
+                            <label
+                                    style="color: azure">{{session.name}}</label>
+
+                            <input id="logout" type="submit"
+                                   class="btn btn-primary"
+                                   value="Logout">
+                        </form>
+
+                    </ul>
+
+                {{else}}
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="login"><a href="/login">Login</a></li>
+                        <li id="register"><a href="/user">register</a></li>
+                    </ul>
+                {{/if}}
+
 
             </div>
         </div>
@@ -77,6 +94,7 @@
             {{#each notices}}
                 <b>{{this}}</b> <br>
             {{/each}}
+            {{auth}}
             <br>
             {{{body}}}
         </div>
