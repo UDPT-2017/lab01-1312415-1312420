@@ -6,7 +6,7 @@ Thành viên:
 * [x] 1312415 Trần Thanh Phán (1312415@github.com)
 * [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
 
-URL: **URL hosting của bài tập**
+URL: https://desolate-hamlet-13166.herokuapp.com/
 
 ## Yêu cầu
 
@@ -31,13 +31,13 @@ Yêu cầu **bắt buộc**
 * [x] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**1312415**)
 
 Yêu cầu **không bắt buộc**:
-* [x] Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản. (**MSSV**)
-* [x] Có thể xem danh sách các comment của từng bài viết.  (**MSSV**)
-* [x] Cho phép người dùng đã đăng nhập đăng thêm bài viết mới. (**MSSV**)
-* [x] Cho phép người dùng đã đăng nhập comment cho bài viết. (**MSSV**)
+* [x] Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản. (**1312415**)
+* [x] Có thể xem danh sách các comment của từng bài viết.  (**1312415**)
+* [x] Cho phép người dùng đã đăng nhập đăng thêm bài viết mới. (**1312415**)
+* [x] Cho phép người dùng đã đăng nhập comment cho bài viết. (**1312415**)
 * [ ] Quản lý thêm thông tin tag cho mỗi bài viết. Mỗi bài viết có thể bao gồm nhiều tag và mỗi tag có thể có nhiều bài viết. (**MSSV**)
 * [ ] Cho phép người dùng đăng nhập bằng tài khoản facebook và lấy ảnh đại diện, email từ facebook. (**MSSV**)
-* [x] Cho phép người dùng tạo album và đăng ảnh mới vào album. (**MSSV**)
+* [x] Cho phép người dùng tạo album và đăng ảnh mới vào album. (**1312415**)
 * [ ] Chỉ cho phép người tạo album được phép thêm, xóa ảnh mình đã đăng vào album. (**MSSV**)
 * [ ] Chỉ cho phép người tạo bài viết được phép chỉnh sửa bài viết mình đã đăng. (**MSSV**)
 * [ ] Cho phép người dùng layout bài viết bằng markdown. (**MSSV**)
