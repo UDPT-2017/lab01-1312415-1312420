@@ -1,43 +1,43 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 const validator = require('validator');
 const jwt = require('jsonwebtoken');
 var uniqueValidator = require('mongoose-unique-validator');
 
 const BlogSchema = mongoose.Schema({
-    email: {
+    content: {
         type: String,
         trim: true,
-        required: [true, "require email"],
-        minlength: [3, "email is shorter than 3"],
-        unique: [true, "this email is already in use"],
-        validate: {
-            validator: validator.isEmail,
-            message: '{VALUE} is not email'
-        }
+        required: [true, "require content"],
+        minlength: [10, "content is shorter than 10 letters"]
     },
-    name:{
+    title: {
         type: String,
-        required: [true, 'require name'],
-        minlength: [3, "password is shorter than 3"]
+        trim: true,
+        required: [true, "require title"],
+        minlength: [3, "title is shorter than 3 letters"]
     },
-    password: {
-        type: String,
-        required: [true, 'require password'],
-        minlength: [6, "password is shorter than 6"]
+    author:{
+        type: Schema.Types.ObjectId,
+        ref: 'users'
     },
-    tokens: [{
-        access: {
-            type: String,
-            required: true
+    view_count:{
+        type: Number,
+        default: 0
+    },
+    comments:[{
+        author:{
+            type: Schema.Types.ObjectId,
+            ref: 'users'
         },
-        token: {
-            type: String,
-            required: true
+        text:{
+            type: String
         }
     }]
 
+
 });
 
-var User = mongoose.model("blogs", BlogSchema);
+var Blog = mongoose.model("blogs", BlogSchema);
 
-module.exports = User;
+module.exports = Blog;

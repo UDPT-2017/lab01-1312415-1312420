@@ -45,7 +45,9 @@ var userBodyHandle = function (req, res, result) {
 
     }).catch(function (e) {
         var messages = [];
-
+        if (e.errors.avatar) {
+            messages.push(e.errors.avatar.message);
+        }
         if (e.errors.password) {
             messages.push(e.errors.password.message);
         }

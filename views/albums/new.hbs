@@ -1,0 +1,11 @@
+<h2>New blog</h2>
+<form action="/album/new" method="post" enctype="multipart/form-data">
+    <label for="album-name">Name:</label>
+    <input id="album-name" type="text" name="name"> <br>
+
+    <label for="album-cover">Add cover picture:</label>
+    <input id="album-cover" type="file" name="cover"> <br>
+
+    <input id="blog-user" type="hidden" name="user" value="{{session.id}}">
+    <input type="submit" value="submit" class="btn btn-primary">
+</form>

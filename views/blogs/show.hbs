@@ -1,0 +1,29 @@
+<b>
+    <h3>
+        <img src="{{blog.author.avatar}}" class="small-avatar">
+        <a href="/blog/{{blog.id}}">
+            {{blog.title}}
+        </a>
+    </h3>
+</b>
+by <b>{{blog.author.name}}</b> <br>
+<p>
+    content: {{blog.content}}
+</p>
+<a href="/blog" class="btn btn-success">back</a>
+<br>
+<h2>comment</h2>
+<form action="/blog/{{blog.id}}" method="post">
+    <b>{{session.name}}</b>:<input type="text" name="text"><br>
+    <input type="hidden" value="{{session.id}}" name="id">
+    <input type="submit" value="add comment" class="btn btn-primary">
+</form>
+<br>
+{{#each blog.comments }}
+    <div class=" col-md-12">
+        <div class="col-md-5 comment">
+            <b>{{this.author.name}}:</b>
+            {{this.text}} <br>
+        </div>
+    </div> <br>
+{{/each}}
