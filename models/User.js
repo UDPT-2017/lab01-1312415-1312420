@@ -16,7 +16,8 @@ const UserSchema = mongoose.Schema({
         }
     },
     avatar: {
-        type: String
+        type: String,
+        required: [true, 'require avatar']
     }
     ,
     name:{
@@ -28,17 +29,7 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: [true, 'require password'],
         minlength: [6, "password is shorter than 6"]
-    },
-    tokens: [{
-        access: {
-            type: String,
-            required: true
-        },
-        token: {
-            type: String,
-            required: true
-        }
-    }]
+    }
 
 });
 UserSchema.plugin(uniqueValidator, {message: '{VALUE} is in use'});

@@ -1,0 +1,16 @@
+<div class="col-md-12">
+    <h2>album <b>{{album.name}}</b> by {{album.author.name}}</h2><br>
+</div>
+<div class="  col-md-4 album-container">
+    <a href="/album" class="btn btn-warning">Back</a> <br>
+    <form action="/album/{{album.id}}" method="post" enctype="multipart/form-data">
+        <label for="picture-input">choose new picture</label>
+        <input id="picture-input" type="file" name="picture">
+        <input type="submit" value="Add" class="btn btn-success">
+    </form>
+</div>
+{{#each album.pictures}}
+    <div class= " col-md-4 album-container">
+        <img src="{{this}}" class="cover">
+    </div>
+{{/each}}

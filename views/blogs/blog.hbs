@@ -1,0 +1,22 @@
+<div class="col-md-12">
+    <a href="/blog/new" class="btn btn-success col-md-12"> new blog</a>
+</div>
+{{#each blogs}}
+    <div class="block col-md-3 ">
+        <div class="blog-container">
+            <b>
+                <h3>
+                    <img src="{{this.author.avatar}}" class="small-avatar">
+                    <a href="/blog/{{this.id}}">
+                        {{this.title}}
+                    </a>
+                </h3>
+            </b>
+            by <b>{{this.author.name}}</b> <br> views:{{this.view_count}}
+            <p>
+                {{this.content}}
+            </p>
+        </div>
+    </div>
+{{/each}}
+

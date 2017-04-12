@@ -1,0 +1,20 @@
+<div class="col-md-12">
+    <a href="/album/new" class="btn btn-success col-md-12"> new album</a>
+</div>
+{{#each albums}}
+    <div class="block col-md-3 ">
+        <div class="album-container">
+            <b>
+                <h3>
+
+                    <a href="/album/{{this.id}}">
+                        {{this.name}}
+                    </a>
+                    by <img src="{{this.author.avatar}}" class="small-avatar"><b>{{this.author.name}}</b>
+                </h3>
+            </b>
+            <img src="{{this.cover}}" class="cover">
+
+        </div>
+    </div>
+{{/each}}
